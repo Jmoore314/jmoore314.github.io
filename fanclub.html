@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fanclub!</title>
+</head>
+<body>
+	<div>
+		<h1><em>Sign up <strong>Here!</strong></em></h1>
+	</div>
+	<div>
+		<form name="sign-ups" action="success.html" method="post" autocomplete="on">  
+			<fieldset>
+				<div>
+					<label>First Name</label>
+					<input type="text" name="fname">
+				</div>
+				<div>
+					<label>Last Name</label>
+					<input type="text" name="lname">
+				</div>
+				<div>
+					<label>Phone Number</label>
+					<input type="number" name="phone">
+				</div>
+				<div>
+					<label>Email</label>
+					<input type="email" name="email">
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<label>Password Creation</label>
+					<input type="password" name="initpass">
+				</div>
+				<div>
+					<label>Confirm Password</label>
+					<input type="password" name="confpass">
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<label>Credit Card #</label>
+					<input type="number" name="ccinfo">
+				</div>
+				<div>
+					<label>Expiration Month</label>
+					<select name="expmn">
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</div>
+				<div>
+					<label>Expiration Year</label>
+					<select name="expyr">
+						<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+					</select>
+				</div>
+				<div>
+					<label>Credit Card Company</label>
+					<select name="cccompany">
+						<option value="amex">American Express</option>
+						<option value="visa">Visa</option>
+						<option value="mc">Master Card</option>
+					</select>
+				</div>
+			</fieldset>
+			<button type="submit">GET ME INTO THE CLUB!</button>
+		</form>
+	</div>
+</body>
+</html>
