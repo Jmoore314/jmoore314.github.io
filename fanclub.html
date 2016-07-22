@@ -12,39 +12,49 @@
 			<fieldset>
 				<div>
 					<label>First Name</label>
-					<input type="text" name="fname">
+					<input type="text" name="fname" required>
 				</div>
 				<div>
 					<label>Last Name</label>
-					<input type="text" name="lname">
+					<input type="text" name="lname" required>
 				</div>
 				<div>
 					<label>Phone Number</label>
-					<input type="number" name="phone">
+					<input type="tel" name="phone" pattern="[0-9]{10,10}" required>
 				</div>
 				<div>
 					<label>Email</label>
-					<input type="email" name="email">
+					<input type="email" name="email" required>
 				</div>
 			</fieldset>
 			<fieldset>
 				<div>
+					<label>Address</label>
+					<textarea rows="4" cols="50" name="address" required></textarea>
+				</div>
+			</fieldset>
+			<fieldset>
+				<div>
+					<label>Desired Username (4-16 Characters)</label>
+					<input type="text" name="usernm" pattern="{4,16}" required>
+				</div>
+				<div>
 					<label>Password Creation</label>
-					<input type="password" name="initpass">
+					<input type="password" name="initpass" required>
 				</div>
 				<div>
 					<label>Confirm Password</label>
-					<input type="password" name="confpass">
+					<input type="password" name="confpass" required>
 				</div>
 			</fieldset>
 			<fieldset>
 				<div>
 					<label>Credit Card #</label>
-					<input type="number" name="ccinfo">
+					<input type="text" pattern="[0-9]{13,16}" name="ccinfo" required>
 				</div>
 				<div>
 					<label>Expiration Month</label>
-					<select name="expmn">
+					<select name="expmn" required>
 						<option value="01">01</option>
 						<option value="02">02</option>
 						<option value="03">03</option>
@@ -61,7 +71,7 @@
 				</div>
 				<div>
 					<label>Expiration Year</label>
-					<select name="expyr">
+					<select name="expyr" required>
 						<option value="2016">2016</option>
 						<option value="2017">2017</option>
 						<option value="2018">2018</option>
@@ -73,7 +83,7 @@
 				</div>
 				<div>
 					<label>Credit Card Company</label>
-					<select name="cccompany">
+					<select name="cc_company" required>
 						<option value="amex">American Express</option>
 						<option value="visa">Visa</option>
 						<option value="mc">Master Card</option>
@@ -81,7 +91,13 @@
 				</div>
 			</fieldset>
 			<button type="submit">GET ME INTO THE CLUB!</button>
+			<button type="reset">Clear data</button>
+			<p><a href="index.html">Home</a></p>
 		</form>
 	</div>
 </body>
+<footer>
+	<p>Created by: <a href="johnmoore314@gmail.com">John Moore</a><br>
+	Contact: <a href="johnmoore314@gmail.com">johnmoore314@gmail.com</a></p>
+</footer>
 </html>
