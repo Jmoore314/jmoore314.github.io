@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Fanclub!</title>
+	<link rel="stylesheet" type="text/css" href="../Styling/styling.css">
 </head>
 <body>
 <h1><a href="../index.html">Home</a> <a href="about.html">About</a> <a href="cast.html">Cast</a> <a href="methods.html">Methods</a> <a href="episodes.html">List of Series</a> <u><em>Fanclub</em></u></h1>
@@ -12,45 +13,45 @@
 		<form name="sign-ups" action="success.html" method="post" autocomplete="on">  
 			<fieldset>
 				<div>
-					<label>First Name</label>
+					<label>First Name:</label>
 					<input type="text" name="fname" required>
 				</div>
 				<div>
-					<label>Last Name</label>
+					<label>Last Name:</label>
 					<input type="text" name="lname" required>
 				</div>
 				<div>
-					<label>Phone Number</label>
+					<label>Phone Number:</label>
 					<input type="tel" name="phone" pattern="[0-9]{10,10}" required>
 				</div>
 				<div>
-					<label>Email</label>
+					<label>Email:</label>
 					<input type="email" name="email" required>
 				</div>
 			</fieldset>
 			<fieldset>
 				<div>
-					<label>Address</label>
+					<label>Address:</label><br>
 					<textarea rows="4" cols="50" name="address" required wrap="hard"></textarea>
 				</div>
 			</fieldset>
 			<fieldset>
 				<div>
-					<label>Desired Username (4-16 Characters)</label>
+					<label>Desired Username (4-16 Characters):</label>
 					<input type="text" name="usernm" pattern="{4,16}" required>
 				</div>
 				<div>
-					<label>Password Creation</label>
+					<label>Password Creation:</label>
 					<input type="password" name="initpass" required>
 				</div>
 				<div>
-					<label>Confirm Password</label>
+					<label>Confirm Password:</label>
 					<input type="password" name="confpass" required>
 				</div>
 			</fieldset>
 			<fieldset>
 				<div>
-					<label>Credit Card Company</label>
+					<label>Credit Card Company:</label>
 					<select name="cc_company" required>
 						<option value="visa">Visa</option>
 						<option value="mc">Master Card</option>
@@ -58,11 +59,11 @@
 					</select>
 				</div>			
 				<div>
-					<label>Credit Card #</label>
+					<label>Credit Card #:</label>
 					<input type="text" pattern="[0-9]{13,16}" name="ccinfo" required>
 				</div>
 				<div>
-					<label>Expiration Month</label>
+					<label>Expiration Month:</label>
 					<select name="expmn" required>
 						<option value="01">01</option>
 						<option value="02">02</option>
@@ -79,7 +80,7 @@
 					</select>
 				</div>
 				<div>
-					<label>Expiration Year</label>
+					<label>Expiration Year:</label>
 					<select name="expyr" required>
 						<option value="2016">2016</option>
 						<option value="2017">2017</option>

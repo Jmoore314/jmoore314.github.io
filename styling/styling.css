@@ -1,3 +1,10 @@
 html {
 	background-image: url("../Photos/paisley.jpg");
 }
+
+body {
+	background-color: #ddd;
+	max-width: 1000px;
+	margin: 25px auto 0px auto;
+	padding: 25px;
+}
