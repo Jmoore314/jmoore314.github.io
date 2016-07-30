@@ -31,6 +31,20 @@ ul.sub {
 	list-style-type: circle;
 }
 
+/* ========LINKS START======== */
+
+a:visited {
+	color: hotpink;
+}
+
+a:hover {
+	color: purple;
+}
+
+a:link {
+	text-decoration: none;
+}
+
 /* ========NAV START======== */
 
 .nav {
@@ -42,24 +56,31 @@ ul.sub {
  	background-color: #C0C0C0;
  	border-bottom: 2px solid black;
  	padding: 0px;
- 	display: inline-block;
+ 	display: inline;
 }
 
 .nav h1 {
 	font-size: 1.6em;
 }
 
-.nav a {
+.nav a:nth-child(1), .nav a:nth-child(2), .nav a:nth-child(3), .nav a:nth-child(4), .nav a:nth-child(5) {
 	padding: 5px 10px;
+	border-right: 2px solid black;
 }
 
 #borderimg {
 	display: inline-block;
+	text-decoration: none;
 	border: 5px solid transparent;
 	padding: 10px 5px 15px 5px;
 	border-image: url(../Photos/Border-1.png);
 	border-image-slice: 50% 50%;
 	border-image-width: 100%
+}
+
+.firstlink {
+	border-left: 2px solid black;
+	padding-left: 10px;
 }
 
 /* ========NAV END======== */
