@@ -15,7 +15,7 @@ body {
 
 img {
 	width: 100%;
-	padding: 0px auto;
+	margin: 0px auto;
 }
 
 ul {
@@ -246,24 +246,25 @@ button {
 @media screen and (min-width: 795px) {
 	#main-img {
 		width: 640px;
-		padding: 0 auto;
+		margin: 0 auto;
 	}
 }
 
 /* =FORM BUTTONS and NAV= */
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 940px) {
 	button {
 		display: block;
 		width: 85%;
 		margin: 5px auto;
 	}
+}
 
 /* =LABELS= */
 
 @media screen and (max-width: 600px) {
 	input {
 		width: 80%;
-		padding: 5px auto 10px auto;
+		margin: 5px auto 10px auto;
 		display: block;
 		vertical-align: middle;
 		margin: 0px auto;	
