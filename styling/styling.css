@@ -10,6 +10,7 @@ body {
 	padding: 25px;
 	border-radius: 25px;
 	text-align: center;
+	font-family: "Helvetica", sans-serif;
 }
 
 img {
@@ -29,6 +30,42 @@ li {
 
 ul.sub {
 	list-style-type: circle;
+}
+
+em#author {
+	font-family: "Yellowtail" , cursive;
+	font-size: 1.4em;
+	font-style: normal;
+}
+
+em#poirot {
+	font-family: 'BenchNine', sans-serif;
+	font-size: 1.4em;
+	font-style: oblique;
+	text-transform: uppercase;
+}
+
+.title {
+	font-family: "Pattaya" , cursive;
+}
+
+li strong {
+	font-family: "Tangerine", cursive;
+	font-size: 2em;
+	padding-right: 5px;
+}
+
+strong.chars {
+	font-family: "Helvetica" , sans-serif;
+	font-size: 1.2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.6em;
 }
 
 /* ========LINKS START======== */
@@ -59,8 +96,9 @@ a:link {
  	display: inline;
 }
 
-.nav h1 {
+.nav h1, .home {
 	font-size: 1.6em;
+	font-family: 'Pattaya', sans-serif;
 }
 
 .nav a:nth-child(1), .nav a:nth-child(2), .nav a:nth-child(3), .nav a:nth-child(4), .nav a:nth-child(5) {
@@ -126,9 +164,17 @@ cite {
 }
 
 
-p#home {
+p.home {
 	font-size: 4ex;
 	margin-top: 30px;
+	text-align: center;
+}
+
+p#successhome {
+	font-size: 3ex;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	text-align: center;
 }
 
 /* ========FORM START======== */
@@ -213,6 +259,7 @@ button {
 	}
 
 /* =LABELS= */
+
 @media screen and (max-width: 600px) {
 	input {
 		width: 80%;
@@ -259,4 +306,3 @@ button {
 		width: 90%;
 	}
 }
-
