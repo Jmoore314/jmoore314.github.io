@@ -5,34 +5,38 @@
 	<link rel="stylesheet" type="text/css" href="../Styling/styling.css">
 </head>
 <body>
-<h1><a href="../index.html">Home</a> <a href="about.html">About</a> <a href="cast.html">Cast</a> <a href="methods.html">Methods</a> <a href="episodes.html">List of Series</a> <u><em>Fanclub</em></u></h1>
+	<div class="nav">
+		<h1><a href="../index.html">Home</a> <a href="about.html">About</a> <a href="cast.html">Cast</a> <a href="methods.html">Methods</a> <a href="episodes.html">List of Series</a> <u id="borderimg"><em>Fanclub</em></u></h1>
+	</div>
+
 	<div>
 		<h1><em>Sign up <strong>Here!</strong></em></h1>
 	</div>
+
 	<div>
 		<form name="sign-ups" action="success.html" method="post" autocomplete="on">  
 			<fieldset>
 				<div>
 					<label>First Name:</label>
-					<input type="text" name="fname" required>
+					<input type="text" name="fname" required placeholder="Jane or Joe">
 				</div>
 				<div>
 					<label>Last Name:</label>
-					<input type="text" name="lname" required>
+					<input type="text" name="lname" required placeholder="Doe">
 				</div>
 				<div>
 					<label>Phone Number:</label>
-					<input type="tel" name="phone" pattern="[0-9]{10,10}" required>
+					<input type="tel" name="phone" pattern="[0-9]{10,10}" required placeholder="1231231234">
 				</div>
 				<div>
 					<label>Email:</label>
-					<input type="email" name="email" required>
+					<input type="email" name="email" required placeholder="jDoe@gmail.com">
 				</div>
 			</fieldset>
 			<fieldset>
 				<div>
-					<label>Address:</label><br>
-					<textarea rows="4" cols="50" name="address" required wrap="hard"></textarea>
+					<label id="addy">Address:</label><br>
+					<textarea rows="4" cols="50" name="address" required wrap="hard" placeholder="Doe residence; Chicago, IL 60604"></textarea>
 				</div>
 			</fieldset>
 			<fieldset>
@@ -60,7 +64,7 @@
 				</div>			
 				<div>
 					<label>Credit Card #:</label>
-					<input type="text" pattern="[0-9]{13,16}" name="ccinfo" required>
+					<input type="text" pattern="[0-9]{13,16}" name="ccinfo" required placeholder="1234123412341234">
 				</div>
 				<div>
 					<label>Expiration Month:</label>
@@ -93,18 +97,20 @@
 				</div>
 				<div>
 					<label>CVV <a href="https://www.cvvnumber.com/"><strong><em>?</em></strong></a></label>
-					<input type="text" name="cvv" pattern="[0-9]{3,3}">
+					<input type="text" name="cvv" pattern="[0-9]{3,3}" placeholder="123">
 					</select>
 				</div>
 			</fieldset>
 			<button type="submit">GET ME INTO THE CLUB!</button>
 			<button type="reset">Clear data</button>
-			<p><a href="../index.html">Home</a></p>
 		</form>
 	</div>
+
+	<p id="home"><a href="../index.html">Home</a></p>
+<hr>
+	<footer>
+		<p>Created by: <a href="mailto:johnmoore314@gmail.com">John Moore</a></p>
+		<p>Contact: <a href="mailto:johnmoore314@gmail.com">	johnmoore314@gmail.com</a></p>
+	</footer>
 </body>
-<footer>
-	<p>Created by: <a href="mailto:johnmoore314@gmail.com">John Moore</a><br>
-	Contact: <a href="mailto:johnmoore314@gmail.com">johnmoore314@gmail.com</a></p>
-</footer>
 </html>

@@ -1,10 +1,241 @@
 html {
-	background-image: url("../Photos/paisley.jpg");
+	background-image: url("../Photos/Paisley-2.jpg");
+	padding: 45px;
 }
 
 body {
-	background-color: #ddd;
-	max-width: 1000px;
-	margin: 25px auto 0px auto;
+	background-color: #C0C0C0;
+	max-width: 900px;
+	margin: 125px auto 0px auto;
 	padding: 25px;
+	border-radius: 25px;
+	text-align: center;
 }
+
+img {
+	width: 100%;
+	padding: 0px auto;
+}
+
+ul {
+	list-style-type: square;
+	text-align: left;
+	margin: 20px 0px;
+}
+
+li {
+	margin: 20px 0px;
+}
+
+ul.sub {
+	list-style-type: circle;
+}
+
+/* ========NAV START======== */
+
+.nav {
+ 	position: fixed;
+ 	top: 0px;
+ 	right: 0px;
+ 	text-align: center;
+ 	width: 100%;
+ 	background-color: #C0C0C0;
+ 	border-bottom: 2px solid black;
+ 	padding: 0px;
+ 	display: inline-block;
+}
+
+.nav h1 {
+	font-size: 1.6em;
+}
+
+.nav a {
+	padding: 5px 10px;
+}
+
+#borderimg {
+	display: inline-block;
+	border: 5px solid transparent;
+	padding: 10px 5px 15px 5px;
+	border-image: url(../Photos/Border-1.png);
+	border-image-slice: 50% 50%;
+	border-image-width: 100%
+}
+
+/* ========NAV END======== */
+/* ========TABLE START======== */
+
+table {
+	margin: 0px auto;
+	width: 75%;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+}
+
+tr:hover, tr:hover th {
+	background-color: #fff;
+}
+
+th {
+	background-color: #aaa;
+}
+
+/* ========TABLE END======== */
+
+p {
+	text-align: left;
+}
+
+footer p {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 5% 0 5%;
+}
+
+cite {
+	display: block;
+	margin: 5pt 0pt 45pt 0pt;
+}
+
+
+p#home {
+	font-size: 4ex;
+	margin-top: 30px;
+}
+
+/* ========FORM START======== */
+
+input {
+	width: 50%;
+	padding: 12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+select {
+	width: 50%;
+	padding: 16px 20px;
+	border-radius: 4px;
+	border: 1px solid black;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+textarea {
+	resize: none;
+	width: 75%;
+	display: block;
+	vertical-align: middle; 
+	margin: 0 auto;
+}
+
+label {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+	text-align: right;
+	font-weight: bold;
+}
+
+label#addy {
+	text-align: center;
+}
+
+fieldset div {
+	padding: 5px;
+}
+
+input:focus, textarea:focus {
+	background-color: lightblue;
+}
+
+button {
+    background-color: #4CAF50;
+    vertical-align: top;
+    display: inline-block;
+    width: 35%;
+    min-width: 150px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 5px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2ex; 
+}
+
+/* ========FORM END======== */
+/* ========SCREEN BREAKS======== */
+
+
+@media screen and (min-width: 795px) {
+	#main-img {
+		width: 640px;
+		padding: 0 auto;
+	}
+}
+
+/* =FORM BUTTONS and NAV= */
+@media screen and (max-width: 845px) {
+	button {
+		display: block;
+		width: 85%;
+		margin: 5px auto;
+	}
+
+/* =LABELS= */
+@media screen and (max-width: 600px) {
+	input {
+		width: 80%;
+		padding: 5px auto 10px auto;
+		display: block;
+		vertical-align: middle;
+		margin: 0px auto;	
+	}
+
+	select {
+		width: 80%;
+		padding: 16px 20px;
+		border-radius: 4px;
+		border: 1px solid black;
+		display: block;
+		vertical-align: middle;
+		margin: 0px auto;
+	}
+
+	label {
+		display: block;
+		vertical-align: middle;
+		width: 80%;
+		text-align: center;
+		font-weight: bold;
+		margin: 0px auto;
+	}
+}
+
+/* =FOOTER= */
+
+@media screen and (max-width: 650px) {
+	footer p {
+		display: block;
+		vertical-align: middle;
+		margin: 5px auto;
+		width: 90%;	
+		}
+
+	footer a {
+		display: block;
+		vertical-align: middle;
+		margin: 5px auto;
+		width: 90%;
+	}
+}
+
