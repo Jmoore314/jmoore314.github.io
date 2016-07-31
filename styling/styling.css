@@ -106,7 +106,7 @@ a:link {
 	border-right: 2px solid black;
 }
 
-#borderimg {
+.borderimg {
 	display: inline-block;
 	text-decoration: none;
 	border: 5px solid transparent;
